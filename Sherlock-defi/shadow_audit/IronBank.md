@@ -120,7 +120,7 @@ Iron Bank is a decentralized lending platform focused on capital efficiency allo
 
 ## High
 
-# Using stale `borrowIndex` to calculate user borrow might return wrong debt value or prevent liquidation
+# $> Using stale `borrowIndex` to calculate user borrow might return wrong debt value or prevent liquidation
 
 ## Description
 
@@ -276,7 +276,7 @@ Update the market before using it's `borrowIdex`
 
 ## Missed findings - High
 
-# `supplyNativeToken` will strand ETH when used after deferred liquidity check due to `msg.value` context loss
+# $> `supplyNativeToken` will strand ETH when used after deferred liquidity check due to `msg.value` context loss
 
 ## Description
 
@@ -329,7 +329,7 @@ User will lose their funds and permanently locked in the contract, user can be i
 
 ## Medium
 
-# No checks in `PriceOracle` for price returned by `getPriceFromChainlink` function
+# $> No checks in `PriceOracle` for price returned by `getPriceFromChainlink` function
 
 ## Description
 
@@ -359,7 +359,7 @@ Add checks and staleness threshold to prevent using stale price.
 
 ## Missed findings - Medium
 
-# Oracle will return wrong price if underlying aggregator hits `minAnswer`
+# $> Oracle will return wrong price if underlying aggregator hits `minAnswer`
 
 ## Description
 
@@ -372,7 +372,7 @@ The `getPriceFromChainlink` function fetched the price from chainlink oracle, Ho
 There are multi ple impacts such as wrong liquidation, wrong collateral and debt value etc.
 
 
-# Price oracle will return wrong price for PToken which has WstEth as underlying asset
+# $> Price oracle will return wrong price for PToken which has WstEth as underlying asset
 
 ## Description
 
